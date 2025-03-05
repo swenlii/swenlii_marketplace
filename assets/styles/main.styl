@@ -1,0 +1,130 @@
+:root {
+  --accent: #333;
+  --bg-gray: #F3F3F5;
+  --text-base: #282828;
+  --text-gray: #A1A1A1;
+  --border-gray: #DADADC;
+}
+
+*
+  box-sizing border-box
+  font-family 'Montserrat', sans-serif
+  -webkit-tap-highlight-color rgba(0,0,0,0)
+  scrollbar-width thin
+  @media (max-width: 1200px)
+    scrollbar-width none
+
+html
+body
+  width 100vw
+  @media (max-width: 1199px)
+    overflow-x hidden
+body
+  padding 0
+  margin 0
+  color var(--text-base)
+  overflow-x hidden
+  font-size 14px
+  font-weight 500
+  background #fff
+
+main
+  padding-top 40px
+  padding-bottom 80px
+  background var(--bg-gray)
+  @media (max-width: 1199px)
+    padding-top 16px
+
+input
+  -webkit-appearance none
+  color inherit
+
+p, dl
+  margin 0
+  padding 0
+
+ul
+  margin 0
+  padding 0
+  list-style none
+
+s
+  text-decoration none
+
+h1, h2, h3
+  margin 0
+
+button
+  padding 0
+  border none
+  cursor pointer
+  background none
+  -webkit-appearance none
+  color inherit
+  svg
+    display block
+a
+  text-decoration none
+  color inherit
+  cursor pointer
+
+.mask
+  animation-duration 2s
+  animation-fill-mode forwards
+  animation-iteration-count infinite
+  animation-name maskAnimation
+  animation-timing-function linear
+  background: var(--bg-gray)
+  > *
+    visibility hidden
+
+.nuxt-icon svg
+  margin-bottom 0 !important
+  width auto !important
+  height auto !important
+
+.color-gray
+  color var(--text-gray)
+
+.btn
+  display flex
+  align-items center
+  justify-content center
+  gap 8px
+  font-size 12px
+  font-weight 600
+  line-height 14px
+  padding 0 24px
+  height 40px
+  border 1px solid transparent
+  border-radius 4px
+  &--primary
+    background var(--accent)
+    color #fff
+  &--disabled
+  &:disabled
+    opacity .7
+    pointer-events none
+  &--white
+    background #fff
+    border 1px solid #333
+    color var(--text-base)
+  &--black
+    background #333
+    color white
+  &--loading
+    pointer-events none
+    font-size 0
+    span
+      display none
+    &::after
+      content url('~/assets/img/loading.png')
+      display block
+      animation-name spin
+      animation-duration 1s
+      animation-iteration-count infinite
+      animation-timing-function linear
+      width 16px
+      height 16px
+    &::before
+      display none

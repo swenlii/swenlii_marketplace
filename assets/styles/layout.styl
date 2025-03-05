@@ -1,0 +1,37 @@
+.relative
+  position relative
+.absolute
+  position absolute
+.d-flex
+  display flex
+.justify-center
+  justify-content center
+.justify-between
+  justify-content space-between
+.align-center
+  align-items center
+.align-start
+  align-items flex-start
+.align-end
+  align-items flex-end
+.flex-column
+  display flex
+  flex-direction column
+
+.hidden-desktop
+  @media (min-width: 1200px)
+    display none !important
+.hidden-mobile
+  @media (max-width: 767px)
+    display none !important
+.hidden-tablet
+  @media (min-width: 768px) and (max-width: 1199px)
+    display none !important
+
+.container
+  width 100%
+  max-width 1110px
+  margin auto
+  position relative
+  @media (max-width: 1199px)
+    padding 0 16px
