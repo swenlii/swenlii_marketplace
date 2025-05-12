@@ -6,7 +6,7 @@
 ![node-version](https://img.shields.io/badge/node->=20.9.0-green)
 
 <div align="center">
-<img src="public/img/example.jpg" width="500px">
+<img src="https://swenlii.github.io/img/projects/marketplace.png" width="700px">
 </div>
 
 ## ⚡Описание проекта
